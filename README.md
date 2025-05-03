@@ -1,12 +1,84 @@
-# React + Vite
+# North Eastern States Pincode & District Counter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Vite + React application that allows users to select one of the 7 North Eastern states of India and fetch the total number of **unique pincodes** and **unique districts** using data from [data.gov.in](https://data.gov.in).
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+_Deployed at:_ [Your Netlify/GitHub Pages URL]
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Features
+
+- Select from 7 North Eastern states:  
+  `["Assam", "Mizoram", "Meghalaya", "Manipur", "Nagaland", "Tripura", "Sikkim"]`
+- Fetches data from the official Indian government API.
+- Displays:
+  - Total number of unique pincodes
+  - Total number of unique districts
+- Uses `axios` for data fetching.
+- Deployed with Vite for fast frontend performance.
+
+---
+
+## 📦 Tech Stack
+
+- **Frontend:** Vite + React
+- **HTTP Client:** Axios
+- **Deployment:** Netlify / GitHub Pages
+- **API Source:** [https://data.gov.in](https://data.gov.in)
+
+---
+
+## 📂 Setup Instructions
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/pincode-north-east.git
+cd pincode-north-east
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure your environment variables
+
+Create a `.env` file in the root folder and add your API key and resource ID:
+
+```
+VITE_API_KEY=your_actual_api_key
+VITE_RESOURCE_ID=your_actual_resource_id
+```
+
+### 4. Run the app locally
+
+```bash
+npm run dev
+```
+
+---
+
+## 🚀 Deployment
+
+* Deploy to **Netlify** or **GitHub Pages** using the build output.
+* Build the app:
+
+```bash
+npm run build
+```
+
+* Upload the `dist` folder to your hosting platform.
+
+---
+
+## 🧪 Sample Output
+
+* Selected State: **Assam**
+* Unique Pincodes: `577`
+* Unique Districts: `34`
+
+![alt text](image.png)
