@@ -4,7 +4,7 @@ This is a simple Vite + React application that allows users to select one of the
 
 ## 🔗 Live Demo
 
-_Deployed at:_ [Your Netlify/GitHub Pages URL]
+_Deployed at:_ https://statepincode.vercel.app/
 
 ---
 
@@ -35,7 +35,7 @@ _Deployed at:_ [Your Netlify/GitHub Pages URL]
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/pincode-north-east.git
+git clone https://github.com/Deepak-Varshney/statepincode.git
 cd pincode-north-east
 ````
 
